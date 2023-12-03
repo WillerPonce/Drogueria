@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylos/inicio.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="texto">Filtrar</label>
+    <h3>Medicamento</h3>
+    <input id="Medicamento" placeholder="Ingrese Medicamento" type="texto">
+    <h3>Marca</h3>
+    <input id="Marca" placeholder="Ingrese Marca"  type="texto">
+    <button id="Validar" onclick="filtarPorMarca()">Validar</button>
+    <button id="Limpiar" onclick="">Limpiar</button>
+    <section class="tablas">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Imagen</th>
+                    <th>Medicamento</th>
+                    <th>Precio</th>
+                    <th>Marca</th>
+                    <th>Unidad de Medida</th>
+                    <th>Contenido</th>
+                    <th>Registro Sanitario</th>
+                    <th>Principio Activo</th>
+                </tr>
+            </thead>
+            <tbody id="Filas">
+            </tbody>
+        </table>
+        <div id="modalVentana" class="modalVentana">
+            <div class="modalContenido">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div id="detallesCaracteristica"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="pagina-actual">Página: 1</div>
+        <div id="total-paginas">Total de páginas: 5</div>
+            <button class="Atras" id="Siguiente">Siguiente</button>
+            <button class="Atras" id="Atras" disabled>Atras</button>
+    </section>
+    
+    <script src="/Script/inicio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylos/index.css">
+    <title>Drogueria ServiMedi</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="subtitulo">Iniciar Sesión</h1>
+        <form onsubmit="ValidarSesion(event)" autocomplete="off">
+            <p class="Nombre__Usuario">
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </p>
+            <p class="Credencial">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required autocomplete="new-password">
+                <p id="mensaje-validacion"></p>
+            </p>
+            <p class="IniciarSesion">
+                <input class="Boton__IniciarSesion" type="submit" value="Iniciar Sesión" href="/Inicio/inicio.html">
+                <button class="Boton__Limpiar" onclick="Limpiar()"> Limpiar</button>
+            </p>
+        </form>
+        <p id="Mensaje"></p>
+    </div>
+    <script src="/Script/index.js"></script>
+</body>
+</html>
