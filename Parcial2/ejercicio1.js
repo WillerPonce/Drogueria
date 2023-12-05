@@ -29,12 +29,6 @@ function contar(varDecenas, varUnidades, decenas, unidades, contadorParrafo) {
 
 
   // Este if es para validar la variable si cumple esta funcion se seguira ejecutando hasta que la varUunidades sea <= a unidades
-  // Primero verifico que ambos sean menores a las decenas y despues que s
-
-  /*EN ESTE IF LO QIE HAGO ES VALIDAR LA VARIBLE DE QUE CUMPLAN ESTA FUNCION SE SEGRUIRA EJECUTANDO HASTA QUE varUnidades <= unidades
-  EJEMPLO PROFE QUI PRIMERO VERIFICO QUE AMBOS SEHAN MENORES A LAS DECENAS DESPUES DIGO O YA SE CUMPLE QUE LAS 
-  DESENAS ESTAN IGUALADAS  ENTOTOCES MIRA SI LAS UNIDADES CUMPLEN SE EJECUTA 
-  HASTA QUE  LAS VARUNIDADES ALCANCE SU LIMITE */
   if ((varDecenas < decenas || varUnidades < unidades) || (varDecenas === decenas && varUnidades <= unidades)) {
     setTimeout(function () {
       contar(varDecenas, varUnidades, decenas, unidades, contadorParrafo);
