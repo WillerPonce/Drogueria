@@ -669,6 +669,8 @@ function verMas(indice) {
     const detalleCaracteristica = características[indice];
 
     const detallesHTML = `
+        <p Imagen:>Imagen: ${detalleCaracteristica.imagen}</p>
+        <p>Medicamento: ${detalleCaracteristica.Nombre}</p>
         <p>Marca: ${detalleCaracteristica.Marca}</p>
         <p>Unidad de Medida: ${detalleCaracteristica.Unidad_de_Medida}</p>
         <p>Contenido: ${detalleCaracteristica.Contenido}</p>
@@ -701,4 +703,3 @@ function filtarPorMarca() {
   características = caracteristicasFiltradas;
   paginaActual = 1;
   mostrarCaracteristicas();
-

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Parcial2 ejercicio1" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Parcial Contador en base 7</title>
+  <link rel="stylesheet" type="text/css" href="ejercicio1.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Contador en base 7</h1>
+    <form>
+      <label for="decenas">Ingrese las decenas:</label>
+      <input type="number" id="decenas" required />
+      <p class="parrafoColor" id="mensajeParrafo" class="parrafo_color"></p>
+
+      <label for="unidades">Ingrese las unidades:</label>
+      <input type="number" id="unidades" required />
+      <p class="parrafoColor" id="mensajeParrafo2"></p>
+
+      <div class="boton">
+        <input type="button" value="Calcular" onclick="calcularDigitos()"/>
+        <p id="contador">Contador en base 7 = 0:0</p>
+
+        <button id="Clear">Clear</button>
+      </div>
+    </form>
+  </div>
+  <script src="ejercicio1.js"></script>
+</body>
+</html>
